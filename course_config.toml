@@ -1,0 +1,24 @@
+course = 'mooc-securing-software-22'
+[exercises."part1-01.portscanner"]
+id = 153929
+checksum = 'c62c68a816582ea210dcc8403cf0405b'
+
+[exercises."part1-02.helloweb"]
+id = 153924
+checksum = '827a2b9af12e3873fbe39d461650f0b3'
+
+[exercises."part1-03.calculator"]
+id = 153927
+checksum = '9f506713143edf11a45f674673ce371c'
+
+[exercises."part1-04.templates"]
+id = 153925
+checksum = '3b75218bdcc4763d6d7ed6b49516b0db'
+
+[exercises."part1-05.hellolist"]
+id = 153926
+checksum = 'c5d9001a85083791330da1a7a75620ed'
+
+[exercises."part1-06.notebook"]
+id = 153928
+checksum = '584e321e8bc343e84eaed52384ed614f'
