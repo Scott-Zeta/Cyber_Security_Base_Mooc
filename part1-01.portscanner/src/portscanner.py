@@ -5,9 +5,16 @@ import socket
 
 def get_accessible_ports(address, min_port, max_port):
 	found_ports = []
-
+	for port in range(min_port,max_port + 1):
+		try:	
+			s = socket.socket()
+			connect = s.connect_ex((address,port))
+			if(connect == 0):
+				found_ports.append(port)
+			s.close()
+		except Exception:
+			pass
 	# write code here
-
 	return found_ports
 
 
