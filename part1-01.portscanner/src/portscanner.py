@@ -12,6 +12,8 @@ def get_accessible_ports(address, min_port, max_port):
 			connect = s.connect_ex((address,port))
 			if(connect == 0):
 				found_ports.append(port)
+				message = "EMM?"
+				s.send(message.encode())
 				data = s.recv(1024)
 				print(data)
 			s.close()
