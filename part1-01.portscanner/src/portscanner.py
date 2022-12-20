@@ -8,9 +8,12 @@ def get_accessible_ports(address, min_port, max_port):
 	for port in range(min_port,max_port + 1):
 		try:	
 			s = socket.socket()
+			s.settimeout(1)
 			connect = s.connect_ex((address,port))
 			if(connect == 0):
 				found_ports.append(port)
+				data = s.recv(1024)
+				print(data)
 			s.close()
 		except Exception:
 			pass
